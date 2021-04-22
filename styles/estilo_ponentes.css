@@ -1,0 +1,19 @@
+.card img{
+-webkit-transition:all 0.9s ease;
+-moz-transition:all 0.9s ease;
+-o-transition:all 0.9s ease;
+-ms-transition:all 0.9s ease;
+width:100%;
+}
+.card:hover img {
+-webkit-transform:scale(1.06);
+-moz-transform:scale(1.06);
+-ms-transform:scale(1.06);
+-o-transform:scale(1.06);
+transform:scale(1.06);
+}
+.card-title text{
+font-weight: normal;
+background-color: #FFFF66;
+padding: 2px;
+}

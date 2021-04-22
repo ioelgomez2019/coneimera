@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#" />      
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="estilos.css">
+    <title>Inscripción</title>  
+  </head>
+  <body>
+     <header style="height: 70px">
+     </header> 
+    <div style="height: 30px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="card shadow-lg p-3 mb-5 bg-white ">
+        <div class="card-header">Formulario de Inscripciones (Datos necesarios para su certificado)</div>
+        <div class="card-body">
+        <form id="form1" action="procesar.php" method="post" class="needs-validation" novalidate>
+          <!-- modo de inscripcion-->
+                <div class="col-lg-12">
+                    <label>Modo de Inscripción</label>
+                    <ul type="list-group">
+                      <li class="list-group-item">
+                        <div class="custom-control custom-radio d-flex justify-content-betwen align-items-center">
+                          <input id="validacionpago1" type="radio" name="regcategory" data-dolares="80" class="custom-control-input" required title="select one">
+                          <label class="custom-control-label" for="validacionpago1">Individual</label>
+                          
+                          
+                        </div>
+                      </li>
+
+                      <li class="list-group-item">
+                        <div class="custom-control custom-radio d-flex justify-content-betwen align-items-center">
+                          <input id="validacionpago2" type="radio" name="regcategory" data-dolares="80" class="custom-control-input" required title="select one">
+                          <label class="custom-control-label" for="validacionpago2"><a href="formulario2.html">Grupal</a></label>
+                          
+                          
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                <!--nombres y apellidos-->
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="nombre">Nombres</label>
+                      <input name="nombre" type="text" class="form-control" id="nombre" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>    
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="apellido">Apellidos</label>
+                      <input name="apellido" type="text" class="form-control" id="apellido" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>   
+                    </div>
+                  </div>
+
+               
+                <!--mail -numero celuar-->
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="nombre">E-mail</label>
+                      <input name="nombre" type="text" class="form-control" id="nombre" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>    
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="apellido">Número Celular</label>
+                      <input name="apellido" type="number" class="form-control" id="apellido" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>   
+                    </div>
+                  </div>
+                  <!--Nacionalidad -->
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="inputState">Nacionalidad</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Perú</option>
+                        <option selected>Chile</option>
+                        <option selected>Argentina</option>
+                        <option selected>Bolivia</option>
+                        <option selected>Colombia</option>
+                        <option selected>otro</option>
+
+                      </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="apellido">Ciudad</label>
+                      <input name="apellido" type="text" class="form-control" id="apellido" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>   
+                    </div>
+                   
+                  </div> 
+                  <!--tipo de documento  -->
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="inputState">Tipo de Documento</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>DNI</option>
+                        <option selected>Clave de Registración</option>
+                        <option selected>Pasaporte</option>
+                        <option selected>Cédula de Identidad</option>
+                        <option selected>Otro</option>
+
+                      </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="apellido">Número de Documento</label>
+                      <input name="apellido" type="number" class="form-control" id="apellido" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>   
+                    </div>
+                   
+                  </div>  
+                <!--universidad-->
+
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="nombre">Universidad  (opcional)</label>
+                        <input name="nombre" type="text" class="form-control" id="nombre" placeholder="" value="" maxlength="8" >
+                        <div class="valid-feedback">¡Ok válido!</div>
+                            
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="nombre">Ocupación y/o Cargo</label>
+                        <input name="nombre" type="text" class="form-control" id="nombre" placeholder="" value="" maxlength="8" >
+                        <div class="valid-feedback">¡Ok válido!</div>
+                            
+                      </div>
+                    </div>
+
+                <!--Monto de pago-->
+                  <!--<div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="nombre">Numero de Membresia ASME</label>
+                      <input name="nombre" type="number" class="form-control" id="nombre" placeholder="" value="" maxlength="8" >
+                      <div class="valid-feedback">¡Ok válido!</div>
+                         
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="nombre"></label>
+                      
+                      <div class="valid-feedback"></div>
+                          
+                    </div>
+                  </div>-->
+                
+                  
+                                  <!--BAUCHER DE PAGO-->
+                  <div class="form-group">
+                  <label for="exampleFormControlFile1">Boucher de Pago</label>
+                  <br>
+                  <img src="images/imgbaucher.jpg" style="height: 450px; width: 450px;"><br>
+                  <label for="exampleFormControlFile1">Subir Baucher de Pago</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile">
+                  </div>
+                <!--Numero de Operacion-->
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="nombre">Número de Secuencia</label>
+                      <input name="nombre" type="NUMBER" class="form-control" id="nombre" placeholder="" value="" maxlength="8" >
+                      <div class="valid-feedback">¡Ok válido!</div>
+                          
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck"><a href="#">Acepto términos y condiciones  </a></label>
+                      <div class="valid-feedback">¡Aceptado!</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+        </div>   
+    </div>
+            </div>       
+        </div>                  
+    </div>
+      
+    <script src="jquery/jquery-3.3.1.min.js"></script>    
+    <script src="popper/popper.min.js"></script>      
+    <script src="bootstrap4/js/bootstrap.min.js"></script>    
+    <script src="codigo.js"></script>       
+  </body>
+</html>

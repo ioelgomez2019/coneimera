@@ -1,0 +1,25 @@
+.client-logos{
+	position: relative;
+	width: 100%;
+	padding-left: 340px;
+	background: #044c70;
+	height: 110px;
+
+	overflow: hidden;
+
+}
+.client-logo .title {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		padding: 25px 30px;
+		background: #044c70;
+		z-index: 99;
+		height: 110px;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+}
